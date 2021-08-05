@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndieBrew | Sign Up</title>
+    <link rel="stylesheet" href="css/sign-up.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="brandlogo">
+                    <img src="images/Logo.svg" alt="IndieBrew">
+                </div>
+                <div class="homepage">
+                        <a href="index.html">
+                            <div class="back_button_wrap">
+                                <div class="arrow">
+                                    <i class="fas fa-chevron-left"></i>
+                                </div>
+                                <h3>Back to homepage</h3>
+                            </div>
+                        </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--MAIN SECTION-->
+    <section>
+        <div class="container">
+            <div class="col_left">
+                <div class="text">
+                    <h1>Create your personalized feed.</h1>
+                    <ul>
+                        <li id="a"><strong>Over 20 resources.</strong> With resources ranging from Reddit to IndieHackers, we've got all your needs covered.</li>
+                        <li id="b"><strong>Delivered weekly.</strong> Every week at exactly Tuesday 12:00 P.M. EST — expect a value-packed digest right in your email.</li>
+                        <li id="c"><strong>Unlimited ideas.</strong> With all the ideas you'll be reading about, what's stopping you from creating a sustainable startup?</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col_right">
+                <div class="form">
+                    <h2>Create your IndieBrew Account</h2>
+                    <form action="sign_up.php">
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" required id="email" placeholder="john@example.com">
+                        </div>
+                        <div>    
+                            <label for="name">Full name</label>
+                            <input type="text" name="name" required id="name" placeholder="John Doe">
+                        </div>
+                        <div>    
+                            <label for="password">Password</label>
+                            <input type="password" minlength="8" required name="password" id="password" placeholder="At least 8 characters">
+                        </div>
+                        <div class="terms">
+                            <label for="check" class="check_container">By creating an account on IndieBrew, your agree to the <a href="#">Terms & Conditions</a>.    
+                                <input type="checkbox" name="check" required id="check">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="submit" value="Create an Account">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
