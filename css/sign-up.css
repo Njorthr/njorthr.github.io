@@ -221,4 +221,10 @@ li {
     .back_button_wrap h3 {
         display: none;
     }
+    section {
+        margin-top: 1rem;
+    }
+    input[type="submit"] {
+        margin-top: 20px;
+    }
 }
